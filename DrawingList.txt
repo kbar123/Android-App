@@ -1,4 +1,7 @@
-List<String> DrawObjects = new ArrayList<String>(Arrays.asList("Books", "Trophy", "Statue", "Dog", "Cat", "House", "Bicycle", "Map", "Diamond", "Toothpaste",
+public List<String> returnRandomSeries()
+{
+
+ List<String> DrawObjectsList = new ArrayList<String>(Arrays.asList("Books", "Trophy", "Statue", "Dog", "Cat", "House", "Bicycle", "Map", "Diamond", "Toothpaste",
 "Sunglasses", "Ring", "Trees", "Tent", "Beach", "Pizza", "Newspapaer", "Skateboard", "Sandwich", "Skull", "Cake", "Shoes", "Drums", "Computer", "Giraffe" 
 "Phone", "Apple", "Witch", "Snake", "Bee", "Pool", "MotorCycle", "Flag", "Coins", "Frog", "Sword", "Horse", "Bird", "Pencil", "Ship", "Turkey", "Basketball",
 "Airplane", "Crown", "Dinosaur", "Castle", "Gun", "Baby", "Fork", "Candy", "Moon", "Sushi", "Coffee", "Fish", "Flower", "TV", "Toothbrush", "Turtle", "Duck",
@@ -7,4 +10,10 @@ List<String> DrawObjects = new ArrayList<String>(Arrays.asList("Books", "Trophy"
 "Tornado", "Farmer", "Pretzel", "Alien", "Rollercoaster", "Desk", "Bear", "Sweatshirt", "Pants", "Shirt", "	Spider", "Car", "Firefighter", "Lightning,
 "Police", "Bats", "Scuba Diver", "Rat", "Rain", "Snow", "Clown", "Worms", "Mushrooms", "Pirate", "Jumprope", "Feet", "Taco", "Camel", "Mermaid", "Feather"));
 
+Collections.shuffle(DrawObjectsList);
+int randomSeriesLength = 3;
+List<String> randomSeries = DrawObjectsList.subList(0, randomSeriesLength);
 
+return randomSeries;
+
+}
