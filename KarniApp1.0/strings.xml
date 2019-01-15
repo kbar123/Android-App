@@ -1,0 +1,9 @@
+
+<resources>
+    import java.util.Arrays;
+    RandomList newList = new RandomList();
+    <array name="array">randList = newList.getList()</array>
+    <string name="app_name">Karni App</string>
+
+    <string name="name">hello</string>
+</resources>
